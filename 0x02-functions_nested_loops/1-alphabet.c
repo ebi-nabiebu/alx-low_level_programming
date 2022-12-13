@@ -2,9 +2,9 @@
 /**
  * main -A program that prints the alphabet in lowercase.
  *
- * Return: 0
  */
-int main(void)
+
+void print_alphabet(void)
 {
 
 char alpha = 'a';
@@ -16,6 +16,5 @@ alpha++;
 }
 
 _putchar('\n');
-return (0);
 }
 
