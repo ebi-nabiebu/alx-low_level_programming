@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_x10 -A program that prints the alphabet in lowercase.
+ * print_alphabet_x10 -A program that prints the alphabet 10 times.
  *
  */
 
@@ -12,9 +12,8 @@ int count;
 
 while (i++ <= 9)
 {
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+for (alpha = 'a'; alpha <= 'z'; alpha++)
 _putchar(alpha);
 alpha++;
 _putchar('/n');
-}
 }
