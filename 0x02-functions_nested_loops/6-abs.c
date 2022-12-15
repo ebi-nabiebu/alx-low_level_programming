@@ -13,6 +13,6 @@ return (n);
 }
 else
 {
-return (1);
+return (-n);
 }
 }
