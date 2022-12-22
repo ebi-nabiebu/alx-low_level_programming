@@ -2,26 +2,26 @@
 
 /**
  * rot13 - This function that encodes a string using rot13.
- * @str: The String
+ * @s: The String
  *
  * Return: String str Address
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 int m, n;
 char ee[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char ef[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (m = 0; *(str + m); m++)
+	for (m = 0; *(s + m); m++)
 {
 	for (n = 0; n < 52; n++)
 	{
-		if (ee[m] == *(str + m))
+		if (ee[m] == *(s + m))
 		{
-			*(str + m) = ef[n];
+			*(s + m) = ef[n];
 			break;
 		}
 	}
 }
-return (str);
+return (s);
 }
